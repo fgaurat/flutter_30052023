@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/counter_root_state.dart';
 import 'package:hello_world/hello.dart';
+import 'package:hello_world/inc_cpt.dart';
 import 'package:hello_world/my_home_page.dart';
 import 'package:hello_world/say_hello.dart';
 import 'package:hello_world/toggle.dart';
@@ -28,15 +29,13 @@ class MyApp extends StatelessWidget {
         ),
         body: const Column(
           children: [
-            Hello(name:"Fred"),
+            Hello(name: "Fred"),
             Toggle(),
             SayHello(),
-            CounterRootState()
+            CounterRootState(),
           ],
         ),
       ),
     );
   }
-
-
 }
